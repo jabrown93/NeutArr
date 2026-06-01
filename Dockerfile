@@ -1,4 +1,4 @@
-FROM python:3.12-slim AS requirements-builder
+FROM python:3.14-slim AS requirements-builder
 
 WORKDIR /app
 
@@ -20,7 +20,7 @@ RUN python -m venv /tmp/poetry-venv \
     && rm -rf /tmp/poetry-venv /tmp/requirements.txt
 
 # ─────────────────────────────────────────────
-FROM python:3.12-slim
+FROM python:3.14-slim
 
 ARG NEUTARR_VERSION
 ENV NEUTARR_VERSION=${NEUTARR_VERSION}
