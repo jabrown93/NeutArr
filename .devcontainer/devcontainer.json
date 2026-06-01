@@ -1,6 +1,6 @@
 {
   "name": "NeutArr",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "image": "mcr.microsoft.com/devcontainers/python:3.14",
 
   // Mount workspace at /app to match the production Dockerfile layout
   "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached",
